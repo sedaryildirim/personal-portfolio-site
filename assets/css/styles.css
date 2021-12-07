@@ -378,7 +378,7 @@ img {
     background-color: #FFF;
 }
 
-.button---flex {
+.button--flex {
     display: inline-flex;
     align-items: center;
 }
@@ -996,6 +996,7 @@ img {
 }
 
 .scrollup__icon {
+    padding-top: .5rem;
     font-size: 1.5rem;
     color: #FFF;
 }
