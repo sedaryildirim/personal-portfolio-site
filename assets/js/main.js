@@ -28,23 +28,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-
-    for(i = 0; i < skillsContent.length; i++){
-    skillsContent[i].className = 'skills__content skills__close'
-} if (itemClass === 'skills__content skills__close') {
-    this.parentNode.className =  'skills__content skills__open'
-}}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target'),
 tabContents = document.querySelectorAll('[data-content]')
@@ -187,3 +170,19 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== TEXT CHANGE ====================*/ 
+let text = ["(it's pronounced: see·duh)", "or you can just call me Sid", "Hi, I'm Sedar"] ;
+let counter = 0;
+let elem = document.getElementById("changeText");
+let inst = setInterval(change, 2500);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}

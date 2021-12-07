@@ -443,12 +443,12 @@ img {
 
 .skills__header {
     display: flex;
-    align-items: center;
+    align-content: center;
+    align-items: stretch;
     margin-bottom: var(--mb-2-5);
-    cursor: pointer;
 }
 
-.skills__icon, .skills__arrow {
+.skills__icon {
     font-size: 2rem;
     color: var(--first-color);
 }
@@ -864,6 +864,16 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
 .contact__container {
     row-gap: 3rem;
 }
@@ -1090,11 +1100,9 @@ img {
         justify-self: 1;
     }
     
-    .about__container, 
     .skills__container, 
     .portfolio__content, 
     .project__container, 
-    .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1145,82 +1153,82 @@ img {
     .nav__toggle {
         display: none;
     }
-
+    
     .nav__list {
         display: flex;
         column-gap: 2rem;
     }
-
+    
     .nav__list > li {
         margin-right: 1rem;
     }
-
+    
     .nav__menu {
         margin-left: auto;
     }
-
+    
     .change-theme {
         margin: 0;
     }
-
+    
     .home__container {
         row-gap: 5rem;
     }
-
+    
     .home__content {
         padding-top: 5.5rem;
         column-gap: 2rem;
     }
-
+    
     .home__blob {
         width: 270px;
     }
-
+    
     .home__scroll {
         display: block;
     }
-
+    
     .home__scroll-button {
         margin-left: 3rem;
     }
-
+    
     .about__container {
         column-gap: 5rem;
     }
-
+    
     .about__img {
         width: 350px;
     }
-
+    
     .about__description {
         text-align: initial;
     }
-
+    
     .about__info {
         justify-content: space-between;
     }
-
+    
     .about__buttons {
         justify-content: initial;
     }
-
+    
     .qualification__tabs {
         justify-content: center;
     }
-
+    
     .qualification__button {
         margin: 0 var(--mb-1);
     }
-
+    
     .qualification__sections {
         grid-template-columns: .5fr;
     }
-
+    
     .services__container {
         grid-template-columns: repeat(3, 218px);
         justify-content: center;
     }
-
+    
     .services__icon {
         font-size: 2rem;
     }
@@ -1228,27 +1236,27 @@ img {
     .services__content {
         padding: 6rem 0rem 2rem 2.5rem;
     }
-
+    
     .services__modal-content {
         width: 450px;
     }
-
+    
     .project__img {
         width: 320px;
     }
-
+    
     .portfolio__content {
         align-items: center;
     }
-
+    
     .project {
         text-align: initial;
     }
-
+    
     .project__bg {
         background: none;
     }
-
+    
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
@@ -1256,28 +1264,28 @@ img {
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
-
+    
     .project__data {
         padding-top: .8rem;
     }
-
+    
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    
     .footer__bg {
         padding: 3rem 0 3.5rem;
     }
-
+    
     .footer__links {
         flex-direction: row;
         column-gap: 2rem;
     }
-
+    
     .footer__socials {
         justify-self: flex-end;
     }
-
+    
     .footer__copy {
         margin-top: 4.5rem;
     }
@@ -1290,31 +1298,31 @@ img {
     .footer__container {
         padding: 0;
     }
-
+    
     .home__blob {
         width: 320px;
     }
-
+    
     .home__social {
         transform: translateX(-6rem);
     }
-
+    
     .services__container {
         grid-template-columns: repeat(3, 238px);
     }
-
+    
     .portfolio__content {
         column-gap: 5rem;
     }
-
+    
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }
-
+    
     .swiper-button-prev {
         left: -3.5rem;
     }
-
+    
     .swiper-button-next {
         right: -3.5rem;
     }
@@ -1322,7 +1330,7 @@ img {
     .swiper-container-horizontal > .swiper-pagination-bullets {
         bottom: -4.5rem;
     }
-
+    
     .contact__form {
         width: 460px;
     }
@@ -1331,3 +1339,5 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
