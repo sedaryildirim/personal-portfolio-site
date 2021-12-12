@@ -173,7 +173,7 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== TEXT CHANGE ====================*/ 
-let text = ["(it's pronounced: see·duh)", "or you can just call me Sid", "Hi, I'm Sedar"] ;
+let text = ["(it's pronounced: see·der)", "or you can just call me Sid"] ;
 let counter = 0;
 let elem = document.getElementById("changeText");
 let inst = setInterval(change, 2500);
@@ -183,6 +183,6 @@ function change() {
   counter++;
   if (counter >= text.length) {
     counter = 0;
-    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
